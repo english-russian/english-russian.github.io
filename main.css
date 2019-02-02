@@ -1,5 +1,47 @@
-/* If the screen size is 601px or more, set the font-size of <div> to 80px */
-@media only screen and (min-width: 801px) {
+
+@media only screen and (max-width: 1024px) {
+  div{
+    font-size: 30px;
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  table, th, td {
+      height: 50px;
+  }
+  #the_tenses_table {
+    width: 100%;
+    height: auto;  }
+}
+
+::selection {
+  color: red;
+  background-color: yellow;
+}
+@media only screen and (min-width: 1025px) {
+  div {
+    font-size: 30px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    height: 50px;
+  }
+  #main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #the_tenses_table {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
   div{
     font-size: 20px;
   }
@@ -16,35 +58,8 @@
     width: 80%;
   }
   #the_tenses_table {
-    width: 100%;
-  }
-}
-
-/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 800px) {
-  div {
-    font-size: 40px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  table, th, td {
-    height: 50px;
-  }
-  #main {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  #the_tenses_table {
-    width: 100%;
-  }
-}
-
-::selection {
-  color: red;
-  background-color: yellow;
+    width: 60%;
+    height: auto;  }
 }
 
 th, td {
