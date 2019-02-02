@@ -1,5 +1,5 @@
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 801px) {
   div{
     font-size: 20px;
   }
@@ -21,7 +21,7 @@
 }
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 8004px) {
   div {
     font-size: 30px;
   }
