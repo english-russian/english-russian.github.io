@@ -3,6 +3,19 @@
   div{
     font-size: 20px;
   }
+  table {
+    width: 50%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    height: 50px;
+  }
+  #main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+
+  }
 }
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
@@ -10,20 +23,24 @@
   div {
     font-size: 60px;
   }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    height: 50px;
+  }
+  #main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+  }
 }
 
 ::selection {
   color: red;
   background-color: yellow;
-}
-
-table {
-  width: 50%;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  height: 50px;
 }
 
 th, td {
@@ -51,12 +68,8 @@ body {
 
 #main {
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 80%;
   background: url("https://images.unsplash.com/photo-1503517094625-5bfb5286f8bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1962&q=80") left top repeat-y;
   background-size: cover;
-
 }
 
 ul {
