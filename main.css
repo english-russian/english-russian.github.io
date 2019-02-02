@@ -1,3 +1,17 @@
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div{
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div {
+    font-size: 40px;
+  }
+}
+
 ::selection {
   color: red;
   background-color: yellow;
@@ -43,4 +57,25 @@ body {
   background: url("https://images.unsplash.com/photo-1503517094625-5bfb5286f8bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1962&q=80") left top repeat-y;
   background-size: cover;
 
+}
+
+ul {
+  list-style-type: circle;
+}
+
+a {
+  text-decoration: none;
+}
+
+a a:link a:visited a:hover a:active {
+  color: black;
+}
+
+a:hover {
+  text-shadow: 2px 2px 10px #000000;
+  color: red;
+}
+
+b {
+  text-shadow: 1px 1px #FFFFFF, 1 1 6px #000000;
 }
