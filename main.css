@@ -1,6 +1,24 @@
+@media print {
+   .printer-only {
+       display: block;
+   }
+   p {
+       display: none;
+     }
+   ul li {
+       display: none;
+   }
+   ol li {
+       display: none;
+   }
+   a {
+       display: none;
+   }
+}
+
 @media only screen and (max-width: 1024px) {
   div{
-    font-size: 30px;
+    font-size: 60px;
   }
   table {
       width: 100%;
@@ -20,7 +38,7 @@
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   div {
-    font-size: 30px;
+    font-size: 40px;
   }
   table {
     width: 100%;
@@ -59,6 +77,13 @@
   #the_tenses_table {
     width: 60%;
     height: auto;  }
+
+  #main {
+    margin: auto;
+    background: url("https://images.unsplash.com/photo-1503517094625-5bfb5286f8bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1962&q=80") left top repeat-y;
+    background-size: cover;
+  }
+
 }
 
 th, td {
@@ -82,12 +107,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-#main {
-  margin: auto;
-  background: url("https://images.unsplash.com/photo-1503517094625-5bfb5286f8bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1962&q=80") left top repeat-y;
-  background-size: cover;
 }
 
 ul {
