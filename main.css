@@ -1,19 +1,15 @@
 @media print {
-   .printer-only {
+   .can-be-printed {
        display: block;
    }
-   p {
-       display: none;
-     }
-   ul li {
-       display: none;
-   }
-   ol li {
-       display: none;
-   }
-   a {
-       display: none;
-   }
+   ul li { display: none; }
+   ol li { display: none; }
+   table { display: none; }
+   a     { display: none; }
+   p     { display: none; }
+   tr    { display: none; }
+   td    { display: none; }
+   h2    { display: none; }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -32,10 +28,6 @@
     height: auto;  }
 }
 
-::selection {
-  color: red;
-  background-color: yellow;
-}
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   div {
     font-size: 40px;
@@ -86,46 +78,52 @@
 
 }
 
-th, td {
-  text-align: center;
-  vertical-align: middle;
-  border-bottom: 1px solid #ddd;
-}
+@media only screen {
+  ::selection {
+    color: red;
+    background-color: yellow;
+  }
+  th, td {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+  }
 
-tr:hover {background-color: #f5f5f5;}
+  tr:hover {background-color: #f5f5f5;}
 
-th {
-  background-color: #4CAF50;
-  color: white;
-}
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
 
-body {
-  background-color: #DDD;
-}
+  body {
+    background-color: #DDD;
+  }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-ul {
-  list-style-type: circle;
-}
+  ul {
+    list-style-type: circle;
+  }
 
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-a a:link a:visited a:hover a:active {
-  color: black;
-}
+  a a:link a:visited a:hover a:active {
+    color: black;
+  }
 
-a:hover {
-  text-shadow: 2px 2px 10px #000000;
-  color: red;
-}
+  a:hover {
+    text-shadow: 2px 2px 10px #000000;
+    color: red;
+  }
 
-b {
-  text-shadow: 1px 1px #FFFFFF, 1 1 6px #000000;
+  b {
+    text-shadow: 1px 1px #FFFFFF, 1 1 6px #000000;
+  }
 }
